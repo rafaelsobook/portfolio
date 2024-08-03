@@ -29,13 +29,17 @@ const Carousel = ({images, imgDir}) => {
     return () => clearInterval(interval);
   }, []);
 
+  let vanishingImgs = []
+  images.forEach(img => {
+    vanishingImgs.push(getImage(img))
+  })
   return (
     <div className="carousel">
       <div className="carousel-images">
         {images.map((image, index) => (
           <img
             key={index}
-            src={getImage(image)}
+            src={vanishingImgs[0]}
             alt={`Slide ${index + 1}`}
             className={`carousel-image ${index === currentIndex ? 'active' : ''}`}
           />
