@@ -39,7 +39,7 @@ const Carousel = ({images, imgDir}) => {
         {images.map((image, index) => (
           <img
             key={index}
-            src={vanishingImgs[0]}
+            src={`/${image}`}
             alt={`Slide ${index + 1}`}
             className={`carousel-image ${index === currentIndex ? 'active' : ''}`}
           />
