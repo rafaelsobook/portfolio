@@ -43,7 +43,7 @@ export const projects = [
         ss2:'db3.png',
         ss3:'db4.png',
         borders: "form.png",
-        bottomImg: "backg1.jfif",
+        bottomImg: "backg2.jpg",
         contentLink: 'dungeonborn',
         gameLink: "https://dungeon-born.com",
         ytLink: 'https://www.youtube.com/embed/OkDt7D4zq58',
@@ -66,8 +66,8 @@ export const projects = [
                 cap2: "By lighting a bonfire and establishing a campsite, players can cook meals to restore health, gain temporary buffs, and even bond with fellow adventurers around the campfire. This feature not only provides a safe haven in the game's dangerous world but also enhances immersion by simulating a true survival experience.",
             },
         ],
-        startingCaption: "The Mysteries of Grim Land",
-        endingCaption: "Only the mightiest will stand.",
-        storyDesc: "In the heart of tranquility, the unimaginable happened. An entire village, torn from its roots, thrust into the unknown. A realm of peril and mystery, where safety is a distant memory and survival is the only law. Against the unknown, they built walls of stone and hope. Yet, the shadows brought more than fear—they brought death. Grim, the demon lord of legend, was believed to be the orchestrator of their plight. One man's devotion to the dark brought whispers of his power to life. But from the darkness came a gift—magic. Strength surged through their veins, and the power to summon was bestowed upon a priest of light. He called upon you, the brave, the daring, to traverse the uncharted lands, to fight, to survive, to uncover the truth. In GrimLand, every step is a challenge, every victory a beacon of hope. Will you rise as heroes, or fall to the shadows? Face the unknown, uncover the secrets, and if you dare, confront the demon lord himself. Only the mightiest will stand."
+        startingCaption: "The World Of Danger Awaits",
+        endingCaption: "Risk everything you have and survive !",
+        storyDesc: "Dungeon Born  a Browser MMO game transformed into a life-and-death . Thanks to the valiant efforts of the Gods, Who Summoned me in this new World, Just moments after reincarnated you find yourself in an unknown Village. What awaits to you and your friends will embark you in a new journey of survival and adventure ! This Game is made for true adventurers who hates automatic quests and want to explore. The game has only one life system which you will reset if you die all data will be lost. Only the strongest can get more Items and hidden relics or even further to be one of the game lordz."
     },
 ]

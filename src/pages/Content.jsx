@@ -114,7 +114,8 @@ export default function Content() {
                 </div>
                 
                 <div style={{
-                background: `url("./${myContent.bottomImg}") no-repeat`, backgroundSize: "cover", backgroundPosition: "center"
+                background: `url("./${myContent.bottomImg}") no-repeat`, 
+                backgroundSize: "cover", backgroundPosition: "center"
                 }} className="bottom"> 
                     <p className="big-caption">- Contributors -</p>
                     <div className="center-div">

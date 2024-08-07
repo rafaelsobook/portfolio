@@ -312,6 +312,18 @@ header a {
   margin-bottom: 30px;
 }
 
+.project-container .project-box .info-bx .info-left .game-link-btn {
+  background: #0e0c0c;
+  color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 2px;
+  margin: 5px 0 0 10px;
+}
+
+.project-container .project-box .info-bx .info-left .game-link-btn:active {
+  opacity: 0.8;
+}
+
 .project-container .project-box .info-bx .info-ss {
   display: -webkit-box;
   display: -ms-flexbox;
