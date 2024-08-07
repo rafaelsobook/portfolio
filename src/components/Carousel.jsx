@@ -1,16 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import img1 from "../assets/homeimages/1.png"
-import img2 from "../assets/homeimages/2.png"
-import img3 from "../assets/homeimages/3.png"
-import img4 from "../assets/homeimages/4.png"
-import img5 from "../assets/homeimages/5.png"
-import img6 from "../assets/homeimages/6.png"
-import img7 from "../assets/homeimages/7.png"
-import img8 from "../assets/homeimages/8.png"
-import img9 from "../assets/homeimages/9.png"
-
-
-// const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9] ;
 
 const Carousel = ({images, imgDir}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,10 +17,10 @@ const Carousel = ({images, imgDir}) => {
     return () => clearInterval(interval);
   }, []);
 
-  let vanishingImgs = []
-  images.forEach(img => {
-    vanishingImgs.push(getImage(img))
-  })
+  // let vanishingImgs = []
+  // images.forEach(img => {
+  //   vanishingImgs.push(getImage(img))
+  // })
   return (
     <div className="carousel">
       <div className="carousel-images">

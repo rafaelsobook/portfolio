@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from './Carousel';
+import { Link } from 'react-router-dom';
 // import border from "../assets/homeimages/form.png"
 
 export default function ProjectBox({detail}) {
@@ -10,7 +11,9 @@ export default function ProjectBox({detail}) {
         ss1,
         ss2,
         ss3,
+        contentLink
     } = detail
+    const linkLabel = `/${contentLink}`
     const getImage = (imgName) => {
         return new URL(`../assets/ss/${imgName}`, import.meta.url).href;
     };
@@ -25,13 +28,18 @@ export default function ProjectBox({detail}) {
             <div className="top-bx">
                 {/* <img src={border} alt="" className="border" /> */}
                 {/* <img src={imgToDisplay} alt="" className="top-img" /> */}
+                
                 <div className="top-img">
                     <Carousel imgDir={'../assets/ss'} images={diplayImages} />
                 </div>
+               
             </div>
             <div className="info-bx">
                 <div className="info-left">
-                    <h3 className="project-ttle">{projectName}</h3>
+                    <Link to={linkLabel}>
+                        <h3 className="project-ttle">{projectName}</h3>
+                    </Link>
+                    
                     <p className="project-desc">{desc}</p>
                 </div>
                 <div className="info-ss">

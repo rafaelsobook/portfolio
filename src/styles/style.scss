@@ -209,14 +209,17 @@ header {
       flex-wrap: wrap;
       .info-left {
         width: 70%;
+
         .project-ttle {
           font-family: $English;
           font-size: 3rem;
           color: $secondaryBlack;
+          margin-bottom: 10px;
         }
         .project-desc {
           font-family: $raleway;
           padding-left: 5px;
+          margin-bottom: 30px;
         }
       }
       .info-ss {
@@ -227,6 +230,366 @@ header {
           width: 170px;
           border-radius: 5px;
           transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+// CONTENT PAGE
+.content-page {
+  position: relative;
+  .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+
+    .background-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Cover the entire container */
+      transform: translate(-50%, -50%);
+      z-index: 1; /* Behind the content */
+    }
+  }
+  .half-section {
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    top: 80vh;
+    .title {
+      @include absCenter();
+      top: 0;
+      font-size: 3rem;
+      font-family: $English;
+      color: #f5f5f5;
+      letter-spacing: 2px;
+      z-index: 2;
+      display: none;
+    }
+    .game-logo {
+      @include absCenter();
+      top: 0;
+      z-index: 2;
+      width: 400px;
+    }
+    .story {
+      height: auto;
+      padding: 150px 80px;
+      // box-shadow: inset 0px 0px 100px 140px rgba(0, 0, 0, 0.8);
+      .story-backg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        filter: brightness(50%) contrast(80%) blur(5px);
+      }
+      .story-ttle {
+        position: relative;
+        font-family: $English;
+        font-size: 2rem;
+        color: #f5f5f5;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+        z-index: 2;
+      }
+      .game-info {
+        position: relative;
+        @include flexCenter();
+        gap: 50px;
+        margin-bottom: 70px;
+        z-index: 2;
+        .label {
+          width: 150px;
+          color: rgba(115, 213, 226, 0.924);
+          font-family: $raleway;
+          font-size: 0.8rem;
+          text-align: center;
+        }
+        .answer-cap {
+          color: #f5f5f5;
+        }
+      }
+      .game-desc {
+        position: relative;
+        z-index: 2;
+        color: rgba(229, 240, 245, 0.849);
+
+        .starting-cap {
+          font-family: $roboto;
+          margin-bottom: 40px;
+          font-size: 1.4rem;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+        .end-caption {
+          font-family: $raleway;
+          font-size: 1.1rem;
+          margin-top: 25px;
+        }
+        .story-lines {
+          list-style-type: none;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 7px;
+          .desc {
+            font-family: $raleway;
+            font-size: 1.1rem;
+          }
+        }
+      }
+      .platforms-section {
+        margin-top: 100px;
+        margin-bottom: 60px;
+        .link-lists {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 20px;
+          padding: 10px;
+          .linkbtn {
+            text-decoration: none;
+            padding: 13px 15px;
+            font-family: $raleway;
+            background: none;
+            color: white;
+            border: 1px solid white;
+            border-radius: 3px;
+          }
+        }
+      }
+      .youtube-container {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        @include flexCenter();
+      }
+    }
+    .gameplay-container {
+      position: relative;
+      width: 100%;
+      padding: 100px;
+      .features-list {
+        padding: 10px;
+        @include flexCenter();
+        flex-direction: column;
+        gap: 150px;
+        margin-top: 100px;
+        .feature-bx {
+          @include flexCenter();
+          flex-wrap: wrap;
+          gap: 20px;
+          .left {
+            position: relative;
+            @include flexCenter();
+            width: 400px;
+            height: 180px;
+            overflow: hidden;
+            border-radius: 3px;
+            .feature-border {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              padding: 2px 5px;
+            }
+            .feature-img {
+              width: 100%;
+            }
+          }
+          .right {
+            width: 400px;
+
+            .feature-ttle {
+              transform: translateX(-20%);
+              margin-bottom: 40px;
+              padding: 10px 10px;
+              border-radius: 2px;
+              width: 300px;
+              text-align: center;
+              color: #f5f5f5;
+              font-family: $roboto;
+            }
+            .feature-cap {
+              margin-bottom: 30px;
+              font-family: sans-serif;
+            }
+          }
+        }
+      }
+    }
+    .bottom {
+      position: relative;
+      width: 100%;
+      padding: 100px;
+      @include flexCenter();
+      flex-direction: column;
+      .center-div {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        padding: 100px 10px;
+      }
+      .member-bx {
+        width: 200px;
+        @include flexCenter();
+        flex-direction: column;
+        color: #f5f5f5;
+        gap: 5px;
+        .member-img {
+          width: 55%;
+          height: 55%;
+          border-radius: 50%;
+          margin-bottom: 20px;
+        }
+        .member-name {
+          font-family: $roboto;
+          font-size: 0.9rem;
+        }
+        .member-role {
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+        }
+        .red-label {
+          color: crimson;
+          font-size: 1.1rem;
+        }
+      }
+    }
+    @media (max-width: 740px) {
+      .title {
+        font-size: 2.8rem;
+      }
+      .story {
+        padding: 100px 20px;
+        .story-ttle {
+          font-size: 1.6rem;
+        }
+        .game-info {
+          gap: 30px;
+          margin-bottom: 60px;
+        }
+        .game-desc {
+          .story-lines {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 7px;
+            .desc {
+              font-family: $raleway;
+              font-size: 1.1rem;
+            }
+          }
+        }
+        .platforms-section {
+          margin-top: 100px;
+          margin-bottom: 60px;
+          .link-lists {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 10px;
+            .linkbtn {
+              text-decoration: none;
+              padding: 13px 15px;
+              font-family: $raleway;
+              background: none;
+              color: white;
+              border: 1px solid white;
+              border-radius: 3px;
+            }
+          }
+        }
+        .youtube-container {
+          position: relative;
+          width: 100%;
+          height: 70vh;
+          @include flexCenter();
+        }
+      }
+      .gameplay-container {
+        padding: 90px 30px;
+        .features-list {
+          padding: 10px;
+          gap: 120px;
+          .feature-bx {
+            .left {
+              width: 380px;
+              height: 170px;
+            }
+            .right {
+              width: 380px;
+              .feature-ttle {
+                transform: translateX(-10%);
+                margin-bottom: 40px;
+                padding: 10px 10px;
+                border-radius: 2px;
+                width: 300px;
+                text-align: center;
+                color: #f5f5f5;
+                font-family: $roboto;
+              }
+              .feature-cap {
+                margin-bottom: 30px;
+                font-family: sans-serif;
+              }
+            }
+          }
+        }
+      }
+      .bottom {
+        position: relative;
+        width: 100%;
+        padding: 100px;
+        @include flexCenter();
+        flex-direction: column;
+        .center-div {
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+          align-items: center;
+          padding: 100px 10px;
+          flex-wrap: wrap;
+          gap: 40px;
+        }
+        .member-bx {
+          width: 200px;
+          @include flexCenter();
+          flex-direction: column;
+          color: #f5f5f5;
+          gap: 5px;
+          .member-img {
+            width: 55%;
+            height: 55%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+          }
+          .member-name {
+            font-family: $roboto;
+            font-size: 0.9rem;
+          }
+          .member-role {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+              sans-serif;
+          }
+          .red-label {
+            color: crimson;
+            font-size: 1.1rem;
+          }
         }
       }
     }
@@ -366,4 +729,13 @@ footer {
 
 .carousel-image.active {
   opacity: 1;
+}
+.big-caption {
+  font-family: $roboto;
+  font-size: 2rem;
+  color: #f5f5f5;
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
 }

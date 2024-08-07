@@ -303,11 +303,13 @@ header a {
   font-family: "IM Fell English SC", serif;
   font-size: 3rem;
   color: #2a2431;
+  margin-bottom: 10px;
 }
 
 .project-container .project-box .info-bx .info-left .project-desc {
   font-family: "Raleway", sans-serif;
   padding-left: 5px;
+  margin-bottom: 30px;
 }
 
 .project-container .project-box .info-bx .info-ss {
@@ -332,6 +334,545 @@ header a {
   border-radius: 5px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+.content-page {
+  position: relative;
+}
+
+.content-page .top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+}
+
+.content-page .top .background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Cover the entire container */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  /* Behind the content */
+}
+
+.content-page .half-section {
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  top: 80vh;
+}
+
+.content-page .half-section .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 0;
+  font-size: 3rem;
+  font-family: "IM Fell English SC", serif;
+  color: #f5f5f5;
+  letter-spacing: 2px;
+  z-index: 2;
+  display: none;
+}
+
+.content-page .half-section .game-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 0;
+  z-index: 2;
+  width: 400px;
+}
+
+.content-page .half-section .story {
+  height: auto;
+  padding: 150px 80px;
+}
+
+.content-page .half-section .story .story-backg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-filter: brightness(50%) contrast(80%) blur(5px);
+          filter: brightness(50%) contrast(80%) blur(5px);
+}
+
+.content-page .half-section .story .story-ttle {
+  position: relative;
+  font-family: "IM Fell English SC", serif;
+  font-size: 2rem;
+  color: #f5f5f5;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.content-page .half-section .story .game-info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  margin-bottom: 70px;
+  z-index: 2;
+}
+
+.content-page .half-section .story .game-info .label {
+  width: 150px;
+  color: rgba(115, 213, 226, 0.924);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.content-page .half-section .story .game-info .answer-cap {
+  color: #f5f5f5;
+}
+
+.content-page .half-section .story .game-desc {
+  position: relative;
+  z-index: 2;
+  color: rgba(229, 240, 245, 0.849);
+}
+
+.content-page .half-section .story .game-desc .starting-cap {
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.content-page .half-section .story .game-desc .end-caption {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+  margin-top: 25px;
+}
+
+.content-page .half-section .story .game-desc .story-lines {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+}
+
+.content-page .half-section .story .game-desc .story-lines .desc {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+}
+
+.content-page .half-section .story .platforms-section {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.content-page .half-section .story .platforms-section .link-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  padding: 10px;
+}
+
+.content-page .half-section .story .platforms-section .link-lists .linkbtn {
+  text-decoration: none;
+  padding: 13px 15px;
+  font-family: "Raleway", sans-serif;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.content-page .half-section .story .youtube-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-page .half-section .gameplay-container {
+  position: relative;
+  width: 100%;
+  padding: 100px;
+}
+
+.content-page .half-section .gameplay-container .features-list {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 150px;
+  margin-top: 100px;
+}
+
+.content-page .half-section .gameplay-container .features-list .feature-bx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.content-page .half-section .gameplay-container .features-list .feature-bx .left {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.content-page .half-section .gameplay-container .features-list .feature-bx .left .feature-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2px 5px;
+}
+
+.content-page .half-section .gameplay-container .features-list .feature-bx .left .feature-img {
+  width: 100%;
+}
+
+.content-page .half-section .gameplay-container .features-list .feature-bx .right {
+  width: 400px;
+}
+
+.content-page .half-section .gameplay-container .features-list .feature-bx .right .feature-ttle {
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+  margin-bottom: 40px;
+  padding: 10px 10px;
+  border-radius: 2px;
+  width: 300px;
+  text-align: center;
+  color: #f5f5f5;
+  font-family: "Roboto Mono", monospace;
+}
+
+.content-page .half-section .gameplay-container .features-list .feature-bx .right .feature-cap {
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+
+.content-page .half-section .bottom {
+  position: relative;
+  width: 100%;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-page .half-section .bottom .center-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 10px;
+}
+
+.content-page .half-section .bottom .member-bx {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #f5f5f5;
+  gap: 5px;
+}
+
+.content-page .half-section .bottom .member-bx .member-img {
+  width: 55%;
+  height: 55%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.content-page .half-section .bottom .member-bx .member-name {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9rem;
+}
+
+.content-page .half-section .bottom .member-bx .member-role {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.content-page .half-section .bottom .member-bx .red-label {
+  color: crimson;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 740px) {
+  .content-page .half-section .title {
+    font-size: 2.8rem;
+  }
+  .content-page .half-section .story {
+    padding: 100px 20px;
+  }
+  .content-page .half-section .story .story-ttle {
+    font-size: 1.6rem;
+  }
+  .content-page .half-section .story .game-info {
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  .content-page .half-section .story .game-desc .story-lines {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 7px;
+  }
+  .content-page .half-section .story .game-desc .story-lines .desc {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+  }
+  .content-page .half-section .story .platforms-section {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+  .content-page .half-section .story .platforms-section .link-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 20px;
+    padding: 10px;
+  }
+  .content-page .half-section .story .platforms-section .link-lists .linkbtn {
+    text-decoration: none;
+    padding: 13px 15px;
+    font-family: "Raleway", sans-serif;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+  }
+  .content-page .half-section .story .youtube-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content-page .half-section .gameplay-container {
+    padding: 90px 30px;
+  }
+  .content-page .half-section .gameplay-container .features-list {
+    padding: 10px;
+    gap: 120px;
+  }
+  .content-page .half-section .gameplay-container .features-list .feature-bx .left {
+    width: 380px;
+    height: 170px;
+  }
+  .content-page .half-section .gameplay-container .features-list .feature-bx .right {
+    width: 380px;
+  }
+  .content-page .half-section .gameplay-container .features-list .feature-bx .right .feature-ttle {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+    margin-bottom: 40px;
+    padding: 10px 10px;
+    border-radius: 2px;
+    width: 300px;
+    text-align: center;
+    color: #f5f5f5;
+    font-family: "Roboto Mono", monospace;
+  }
+  .content-page .half-section .gameplay-container .features-list .feature-bx .right .feature-cap {
+    margin-bottom: 30px;
+    font-family: sans-serif;
+  }
+  .content-page .half-section .bottom {
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-page .half-section .bottom .center-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 100px 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 40px;
+  }
+  .content-page .half-section .bottom .member-bx {
+    width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #f5f5f5;
+    gap: 5px;
+  }
+  .content-page .half-section .bottom .member-bx .member-img {
+    width: 55%;
+    height: 55%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .content-page .half-section .bottom .member-bx .member-name {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.9rem;
+  }
+  .content-page .half-section .bottom .member-bx .member-role {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .content-page .half-section .bottom .member-bx .red-label {
+    color: crimson;
+    font-size: 1.1rem;
+  }
 }
 
 footer {
@@ -504,5 +1045,16 @@ footer {
 
 .carousel-image.active {
   opacity: 1;
+}
+
+.big-caption {
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

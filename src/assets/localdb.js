@@ -1,0 +1,73 @@
+export const projects = [
+    {
+        projectName: "Grim Land",
+        diplayImages: ["gw.jpg","gw3.jpg", "fight1.jpg", "fight2.jpg"],
+        desc: "An enthralling fantasy adventure MMORPG inspired by Reincarnated Anime Series, born from deep love for the genre. After five months of dedicated development, this game invites players to immerse themselves in a medieval swordplay experience unlike any other. With the innovative use of portal keys, players can explore randomly generated scenes filled with mysterious monsters and hidden treasures, ensuring every journey is unique and unpredictable. Additionally, the game features an NFT marketplace where players can trade their hard-earned items, adding a modern and exciting twist to the classic fantasy adventure.",
+        ss1:'gw1.jpg',
+        ss2:'gw2.jpg',
+        ss3:'gw4.jpg',
+        borders: "form.png",
+        bottomImg: "backg1.jfif",
+        contentLink: 'grimland',
+        gameLink: "https://grimwraith.vercel.app",
+        ytLink: 'https://www.youtube.com/embed/7H2Hbs7FxcI',
+        status: "Beta",
+        genre: "MMORPG",
+        primeColor: "#c9cfcd",
+        secColor: '#252525',
+        thirdColor: '#08232f',
+        gameFeatures: [
+            {
+                imageDisp: "gw2.jpg",
+                header: "DYNAMIC PORTAL SYSTEM",
+                cap1: "A unique key item that can open random portals, Even the game's developer won't know what lies beyond the doors. Each portal could lead to different environments, monsters, and treasures, ensuring every journey is unique.",
+                cap2: "The enemies behind each portal are randomly generated, providing varied combat experiences. Players must adapt their strategies to face different types of foes.",
+            },
+            {
+                imageDisp: "gw1.jpg",
+                header: "MARKETPLACE INTEGRATION",
+                cap1: "Grim Land features an integrated NFT marketplace where players can list their unique NFT items, such as equipable gear and special keys. This system allows players to buy, sell, and trade items with others, enhancing the game's economy.",
+                cap2: "Grim Land is not a pay-to-earn game; the focus is on creating an immersive gameplay experience where the NFT marketplace serves as an optional feature for players to engage with, offering additional customization and trading opportunities.",
+            },
+        ],
+        startingCaption: "The Mysteries of Grim Land",
+        endingCaption: "Only the mightiest will stand.",
+        storyDesc: "In the heart of tranquility, the unimaginable happened. An entire village, torn from its roots, thrust into the unknown. A realm of peril and mystery, where safety is a distant memory and survival is the only law. Against the unknown, they built walls of stone and hope. Yet, the shadows brought more than fear—they brought death. Grim, the demon lord of legend, was believed to be the orchestrator of their plight. One man's devotion to the dark brought whispers of his power to life. But from the darkness came a gift—magic. Strength surged through their veins, and the power to summon was bestowed upon a priest of light. He called upon you, the brave, the daring, to traverse the uncharted lands, to fight, to survive, to uncover the truth. In GrimLand, every step is a challenge, every victory a beacon of hope. Will you rise as heroes, or fall to the shadows? Face the unknown, uncover the secrets, and if you dare, confront the demon lord himself. "
+        
+    },
+    {
+        projectName: "Dungeon Born",
+        diplayImages: ["db1.png",],
+        desc: 'Dungeon Born is an exhilarating multiplayer adventure game inspired by the "reincarnated to another world" anime series and developed during the early stages of learning to code. This game challenges players with a high-stakes, one-life system, where caution is paramount. A single misstep into a trap or an encounter with a dungeon enemy can lead to instant death. Designed to encourage careful exploration and strategic thinking, Dungeon Born offers a thrilling and immersive experience where every decision matters.',
+        ss1:'db2.jpg',
+        ss2:'db3.png',
+        ss3:'db4.png',
+        borders: "form.png",
+        bottomImg: "backg1.jfif",
+        contentLink: 'dungeonborn',
+        gameLink: "https://dungeon-born.com",
+        ytLink: 'https://www.youtube.com/embed/OkDt7D4zq58',
+        status: "Beta",
+        genre: "MMORPG",
+        primeColor: "#f5f5f5",
+        secColor: '#21232a',
+        thirdColor: '#282828',
+        gameFeatures: [
+            {
+                imageDisp: "db3.png",
+                header: "ONE LIFE SYSTEM",
+                cap1: "This one-life mechanic adds a layer of intense excitement and tension, as players must navigate treacherous dungeons filled with deadly traps, powerful enemies, and unforgiving environments.",
+                cap2: "The knowledge that one mistake can lead to permanent death creates a heightened sense of urgency and encourages strategic planning, careful exploration, and skillful combat. This feature enhances the game's atmosphere, making every decision and action crucial to survival, and offering a truly immersive and heart-pounding experience.",
+            },
+            {
+                imageDisp: "db4.png",
+                header: "UNIQUE CAMPING SYSTEM",
+                cap1: "Dungeon Born introduces a unique camping feature, adding depth to the survival experience. Players can hunt for food, gather resources, and set up camp in the wild. ",
+                cap2: "By lighting a bonfire and establishing a campsite, players can cook meals to restore health, gain temporary buffs, and even bond with fellow adventurers around the campfire. This feature not only provides a safe haven in the game's dangerous world but also enhances immersion by simulating a true survival experience.",
+            },
+        ],
+        startingCaption: "The Mysteries of Grim Land",
+        endingCaption: "Only the mightiest will stand.",
+        storyDesc: "In the heart of tranquility, the unimaginable happened. An entire village, torn from its roots, thrust into the unknown. A realm of peril and mystery, where safety is a distant memory and survival is the only law. Against the unknown, they built walls of stone and hope. Yet, the shadows brought more than fear—they brought death. Grim, the demon lord of legend, was believed to be the orchestrator of their plight. One man's devotion to the dark brought whispers of his power to life. But from the darkness came a gift—magic. Strength surged through their veins, and the power to summon was bestowed upon a priest of light. He called upon you, the brave, the daring, to traverse the uncharted lands, to fight, to survive, to uncover the truth. In GrimLand, every step is a challenge, every victory a beacon of hope. Will you rise as heroes, or fall to the shadows? Face the unknown, uncover the secrets, and if you dare, confront the demon lord himself. Only the mightiest will stand."
+    },
+]
