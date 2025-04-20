@@ -18,7 +18,7 @@ export default function Home(){
             <div className="front-cont">
                 <div className="front-captions-cont">
                     <p className="header1">Rafael So</p>
-                    <p className="header3">Software Developer</p>
+                    <p className="header3">Web 3D Developer</p>
                     <p className="my-stack-lists">
                     ReactJs, NodeJs, TypeScript, Solidity, C#, MongoDb, BabylonJs, Blender, Unreal Engine
                     </p>
