@@ -17,9 +17,7 @@ function SocialsLogo() {
             </a>
             <a href="https://rafael29.itch.io/">
                 <img src={itch} alt="" className="socials-logo" />
-            </a>
-            
-           
+            </a>           
         </div>
     )
 }

@@ -4,12 +4,12 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: #201f31;
+  background: rgb(32, 31, 49);
 }
 
 .logo {
@@ -25,18 +25,11 @@ header {
   left: 0;
   width: 100%;
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
 }
-
 header a {
   color: #f5f5f5;
   text-decoration: none;
@@ -53,59 +46,40 @@ header a {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: 80%;
   width: 98%;
   border-radius: 20px;
   background: #2a2431;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
 }
-
 .home-container .front-cont .front-captions-cont {
   position: absolute;
   top: 35%;
   left: 5%;
   z-index: 2;
 }
-
 .home-container .front-cont .front-captions-cont .social-links-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   gap: 20px;
 }
-
 .home-container .front-cont .front-captions-cont .social-links-container .socials-logo {
   width: 35px;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
   opacity: 0.8;
   pointer-events: none;
 }
-
 .home-container .front-cont .left {
   width: 40%;
   padding: 40px;
   position: relative;
   z-index: 2;
 }
-
 .home-container .front-cont .right {
   width: 60%;
   height: 100%;
@@ -114,7 +88,6 @@ header a {
   background: none;
   z-index: -1;
 }
-
 @media (max-width: 700px) {
   .home-container .front-cont .front-captions-cont {
     top: 30%;
@@ -140,40 +113,27 @@ header a {
 }
 
 .summary-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .summary-container .summary-background {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   z-index: -1;
   opacity: 0.9;
 }
-
 .summary-container .title {
   font-family: "Raleway", sans-serif;
   color: #2a2431;
   font-size: 1.6rem;
   color: #f48cff;
 }
-
 .summary-container .label {
   padding: 30px;
   width: 80%;
@@ -182,89 +142,50 @@ header a {
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
-
 .summary-container .list-of-technology {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
   gap: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
-
 .summary-container .list-of-technology li {
   width: 6%;
 }
-
 .summary-container .list-of-technology li .tech-img {
   width: 100%;
 }
-
 .summary-container .list-of-technology li .three-logo {
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
 }
 
 .project-container {
   background: #504e6b;
   margin-top: 20vh;
   padding: 100px 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   gap: 40px;
 }
-
 .project-container .project-box {
   width: 100%;
   padding: 20px;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .project-container .project-box .top-bx {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-
 .project-container .project-box .top-bx .top-img {
   position: relative;
   width: 75%;
@@ -272,46 +193,33 @@ header a {
   border-radius: 10px;
   overflow: hidden;
 }
-
 .project-container .project-box .info-bx {
   border: 2px solid rgba(28, 10, 51, 0.8);
   background: #d4e9da;
   border-radius: 10px;
-  -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
+  transform: translateY(-40px);
   opacity: 0.8;
   width: 80%;
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 .project-container .project-box .info-bx .info-left {
   width: 70%;
 }
-
 .project-container .project-box .info-bx .info-left .project-ttle {
   font-family: "IM Fell English SC", serif;
   font-size: 3rem;
   color: #2a2431;
   margin-bottom: 10px;
 }
-
 .project-container .project-box .info-bx .info-left .project-desc {
   font-family: "Raleway", sans-serif;
   padding-left: 5px;
   margin-bottom: 30px;
 }
-
 .project-container .project-box .info-bx .info-left .game-link-btn {
   background: #0e0c0c;
   color: #f5f5f5;
@@ -319,39 +227,25 @@ header a {
   border-radius: 2px;
   margin: 5px 0 0 10px;
 }
-
 .project-container .project-box .info-bx .info-left .game-link-btn:active {
   opacity: 0.8;
 }
-
 .project-container .project-box .info-bx .info-ss {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .project-container .project-box .info-bx .info-ss .ss-img {
   width: 170px;
   border-radius: 5px;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 .content-page {
   position: relative;
 }
-
 .content-page .top {
   position: fixed;
   top: 0;
@@ -359,7 +253,6 @@ header a {
   width: 100%;
   height: 80vh;
 }
-
 .content-page .top .background-video {
   position: absolute;
   top: 50%;
@@ -367,27 +260,21 @@ header a {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
-  /* Cover the entire container */
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 1;
-  /* Behind the content */
+     object-fit: cover; /* Cover the entire container */
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Behind the content */
 }
-
 .content-page .half-section {
   position: absolute;
   height: 80vh;
   width: 100%;
   top: 80vh;
 }
-
 .content-page .half-section .title {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 0;
   font-size: 3rem;
   font-family: "IM Fell English SC", serif;
@@ -396,23 +283,19 @@ header a {
   z-index: 2;
   display: none;
 }
-
 .content-page .half-section .game-logo {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 0;
   z-index: 2;
   width: 400px;
 }
-
 .content-page .half-section .story {
   height: auto;
   padding: 150px 80px;
 }
-
 .content-page .half-section .story .story-backg {
   position: absolute;
   top: 0;
@@ -420,10 +303,8 @@ header a {
   width: 100%;
   height: 100%;
   z-index: 1;
-  -webkit-filter: brightness(50%) contrast(80%) blur(5px);
-          filter: brightness(50%) contrast(80%) blur(5px);
+  filter: brightness(50%) contrast(80%) blur(5px);
 }
-
 .content-page .half-section .story .story-ttle {
   position: relative;
   font-family: "IM Fell English SC", serif;
@@ -434,23 +315,15 @@ header a {
   margin-bottom: 20px;
   z-index: 2;
 }
-
 .content-page .half-section .story .game-info {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
   margin-bottom: 70px;
   z-index: 2;
 }
-
 .content-page .half-section .story .game-info .label {
   width: 150px;
   color: rgba(115, 213, 226, 0.924);
@@ -458,17 +331,14 @@ header a {
   font-size: 0.8rem;
   text-align: center;
 }
-
 .content-page .half-section .story .game-info .answer-cap {
   color: #f5f5f5;
 }
-
 .content-page .half-section .story .game-desc {
   position: relative;
   z-index: 2;
   color: rgba(229, 240, 245, 0.849);
 }
-
 .content-page .half-section .story .game-desc .starting-cap {
   font-family: "Roboto Mono", monospace;
   margin-bottom: 40px;
@@ -476,55 +346,34 @@ header a {
   font-weight: 600;
   letter-spacing: 1px;
 }
-
 .content-page .half-section .story .game-desc .end-caption {
   font-family: "Raleway", sans-serif;
   font-size: 1.1rem;
   margin-top: 25px;
 }
-
 .content-page .half-section .story .game-desc .story-lines {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
   gap: 7px;
 }
-
 .content-page .half-section .story .game-desc .story-lines .desc {
   font-family: "Raleway", sans-serif;
   font-size: 1.1rem;
 }
-
 .content-page .half-section .story .platforms-section {
   margin-top: 100px;
   margin-bottom: 60px;
 }
-
 .content-page .half-section .story .platforms-section .link-lists {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 20px;
   padding: 10px;
 }
-
 .content-page .half-section .story .platforms-section .link-lists .linkbtn {
   text-decoration: none;
   padding: 13px 15px;
@@ -534,79 +383,45 @@ header a {
   border: 1px solid white;
   border-radius: 3px;
 }
-
 .content-page .half-section .story .youtube-container {
   position: relative;
   width: 100%;
   height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .content-page .half-section .gameplay-container {
   position: relative;
   width: 100%;
   padding: 100px;
 }
-
 .content-page .half-section .gameplay-container .features-list {
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 150px;
   margin-top: 100px;
 }
-
 .content-page .half-section .gameplay-container .features-list .feature-bx {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
-
 .content-page .half-section .gameplay-container .features-list .feature-bx .left {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 400px;
   height: 180px;
   overflow: hidden;
   border-radius: 3px;
 }
-
 .content-page .half-section .gameplay-container .features-list .feature-bx .left .feature-border {
   position: absolute;
   top: 0;
@@ -615,18 +430,14 @@ header a {
   height: 100%;
   padding: 2px 5px;
 }
-
 .content-page .half-section .gameplay-container .features-list .feature-bx .left .feature-img {
   width: 100%;
 }
-
 .content-page .half-section .gameplay-container .features-list .feature-bx .right {
   width: 400px;
 }
-
 .content-page .half-section .gameplay-container .features-list .feature-bx .right .feature-ttle {
-  -webkit-transform: translateX(-20%);
-          transform: translateX(-20%);
+  transform: translateX(-20%);
   margin-bottom: 40px;
   padding: 10px 10px;
   border-radius: 2px;
@@ -635,84 +446,52 @@ header a {
   color: #f5f5f5;
   font-family: "Roboto Mono", monospace;
 }
-
 .content-page .half-section .gameplay-container .features-list .feature-bx .right .feature-cap {
   margin-bottom: 30px;
   font-family: sans-serif;
 }
-
 .content-page .half-section .bottom {
   position: relative;
   width: 100%;
   padding: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .content-page .half-section .bottom .center-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   padding: 100px 10px;
 }
-
 .content-page .half-section .bottom .member-bx {
   width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: #f5f5f5;
   gap: 5px;
 }
-
 .content-page .half-section .bottom .member-bx .member-img {
   width: 55%;
   height: 55%;
   border-radius: 50%;
   margin-bottom: 20px;
 }
-
 .content-page .half-section .bottom .member-bx .member-name {
   font-family: "Roboto Mono", monospace;
   font-size: 0.9rem;
 }
-
 .content-page .half-section .bottom .member-bx .member-role {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
 .content-page .half-section .bottom .member-bx .red-label {
   color: crimson;
   font-size: 1.1rem;
 }
-
 @media (max-width: 740px) {
   .content-page .half-section .title {
     font-size: 2.8rem;
@@ -729,19 +508,10 @@ header a {
   }
   .content-page .half-section .story .game-desc .story-lines {
     list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     gap: 7px;
   }
   .content-page .half-section .story .game-desc .story-lines .desc {
@@ -753,15 +523,9 @@ header a {
     margin-bottom: 60px;
   }
   .content-page .half-section .story .platforms-section .link-lists {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 20px;
     padding: 10px;
   }
@@ -778,15 +542,9 @@ header a {
     position: relative;
     width: 100%;
     height: 70vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .content-page .half-section .gameplay-container {
     padding: 90px 30px;
@@ -803,8 +561,7 @@ header a {
     width: 380px;
   }
   .content-page .half-section .gameplay-container .features-list .feature-bx .right .feature-ttle {
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
+    transform: translateX(-10%);
     margin-bottom: 40px;
     padding: 10px 10px;
     border-radius: 2px;
@@ -821,50 +578,26 @@ header a {
     position: relative;
     width: 100%;
     padding: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .content-page .half-section .bottom .center-div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
     padding: 100px 10px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 40px;
   }
   .content-page .half-section .bottom .member-bx {
     width: 200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: #f5f5f5;
     gap: 5px;
   }
@@ -879,7 +612,7 @@ header a {
     font-size: 0.9rem;
   }
   .content-page .half-section .bottom .member-bx .member-role {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
   .content-page .half-section .bottom .member-bx .red-label {
     color: crimson;
@@ -888,15 +621,9 @@ header a {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 30px;
   color: #f5f5f5;
   font-family: "Roboto Mono", monospace;
@@ -916,16 +643,9 @@ footer {
   }
   .project-container .project-box .info-bx {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .project-container .project-box .info-bx .info-left {
     width: 90%;
@@ -940,43 +660,25 @@ footer {
     padding-left: 5px;
   }
   .project-container .project-box .info-bx .info-ss {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 20px;
   }
   .project-container .project-box .info-bx .info-ss .ss-img {
     width: 80%;
     border-radius: 5px;
-    -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
 }
-
 .my-stack-lists {
   width: 80%;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 5px;
   margin-top: 20px;
   margin-bottom: 25px;
@@ -1003,21 +705,15 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: inset 0px 0px 30px 30px rgba(42, 36, 49, 0.8);
-          box-shadow: inset 0px 0px 30px 30px rgba(42, 36, 49, 0.8);
-  background: -webkit-gradient(linear, left top, right top, from(#2a2431), color-stop(rgba(42, 36, 49, 0.9)), color-stop(rgba(42, 36, 49, 0.7)), color-stop(rgba(42, 36, 49, 0.4)), color-stop(rgba(42, 36, 49, 0.3)), color-stop(transparent), to(transparent));
-  background: linear-gradient(to right, #2a2431, rgba(42, 36, 49, 0.9), rgba(42, 36, 49, 0.7), rgba(42, 36, 49, 0.4), rgba(42, 36, 49, 0.3), transparent, transparent);
+  box-shadow: inset 0px 0px 30px 30px rgba(42, 36, 49, 0.8);
+  background: linear-gradient(to right, rgb(42, 36, 49), rgba(42, 36, 49, 0.9), rgba(42, 36, 49, 0.7), rgba(42, 36, 49, 0.4), rgba(42, 36, 49, 0.3), transparent, transparent);
   z-index: 2;
   pointer-events: none;
 }
 
 .carousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
   width: 100%;
   height: 100%;
@@ -1028,8 +724,6 @@ footer {
 
 .carousel-images {
   outline: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   width: 100%;
@@ -1046,13 +740,11 @@ footer {
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-box-shadow: inset 0px 0px 30px 30px rgba(42, 36, 49, 0.8);
-          box-shadow: inset 0px 0px 30px 30px rgba(42, 36, 49, 0.8);
+  box-shadow: inset 0px 0px 30px 30px rgba(42, 36, 49, 0.8);
 }
 
 .carousel-image.active {
@@ -1068,5 +760,4 @@ footer {
 
 a {
   text-decoration: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

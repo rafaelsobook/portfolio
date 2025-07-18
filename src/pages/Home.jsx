@@ -23,6 +23,8 @@ export default function Home(){
                     ReactJs, NodeJs, TypeScript, Solidity, C#, MongoDb, BabylonJs, Blender, Unreal Engine
                     </p>
                     <SocialsLogo />
+
+
                 </div>
                 <div className="left">
                 
@@ -31,6 +33,13 @@ export default function Home(){
                     <div className="blury-black"></div>
                     <Carousel imgDir={'../assets/homeimages'} images={['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png']} />
                 </div>
+
+                <p style={{
+                position: "absolute",
+                bottom: "3%",
+                left: "3%",
+                color: "white"
+                }} className="email-info"><a style={{color: "white"}} href="mailto:rafaelsobook@gmail.com?subject=Hello&body=Hi Rafael, I saw your portfolio!">Email: rafaelsobook@gmail.com</a></p>
             </div>
         </section>
         <ShortSummary />

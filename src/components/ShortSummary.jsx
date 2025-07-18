@@ -12,7 +12,7 @@ import blender from "../assets/icons/blender.png"
 
 export default function ShortSummary(){
     return (
-        <div className="summary-container cont">
+        <div id="about" className="summary-container cont">
             <img src={backgroundImg} alt="" className="summary-background" />
             <h3 className="title">Short Summary</h3>
             <p className="label">I am a passionate developer with a strong focus on 3D and programming. My expertise includes developing play-to-earn games, creating interactive web applications, and leveraging blockchain technology. I have extensive experience with Babylon.js for 3D game development, integrating blockchain solutions using ethers.js, and utilizing the ThirdWeb React SDK for smart contract interactions. I am adept at deploying and marketing projects on platforms like Vercel and Itch.io.</p>

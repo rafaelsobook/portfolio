@@ -5,9 +5,9 @@ export default function NavBar(){
     return(
         <header>
             <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
+            <a href='#about'>About</a>
+            <a href='#projects'>Projects</a>
+            {/* <a href="mailto:rafaelsobook@gmail.com?subject=Hello&body=Hi Rafael, I saw your portfolio!">Email</a> */}
         </header>
     )
 }
