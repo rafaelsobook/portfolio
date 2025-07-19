@@ -7,7 +7,7 @@ export default function NavBar(){
             <Link to="/">Home</Link>
             <a href='#about'>About</a>
             <a href='#projects'>Projects</a>
-            {/* <a href="mailto:rafaelsobook@gmail.com?subject=Hello&body=Hi Rafael, I saw your portfolio!">Email</a> */}
+            <a href="mailto:rafaelsobook@gmail.com?subject=Hello&body=Hi Rafael, I saw your portfolio!">Contact</a>
         </header>
     )
 }

@@ -5,7 +5,8 @@ export default function Footer() {
         <footer style={{
             display: 'flex',
             justifyContent: 'space-between',
-            alignItems: "center"
+            alignItems: "center",
+            flexWrap: "wrap"
         }}>
             
             <p className="label"> rafaelsobook@gmail.com</p>
